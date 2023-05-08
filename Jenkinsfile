@@ -45,6 +45,11 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
+                bat 'npm install --save-dev playwright'
+            }
+        }
+        stage('Run Tests') {
+            steps {
                 bat 'npx playwright test'
             }
         }
