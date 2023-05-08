@@ -2,3 +2,23 @@ github repo
 
 https://github.com/slittleton/playwright-jenkins.git
 
+
+https://qaautomationlabs.com/how-to-run-playwright-end-to-end-test-case-in-jenkins-pipelines/
+
+add NodeJS to jenkins in Global Tool Configuration 
+Go to the Manage Jenkins page.
+Click on Manage Plugins.
+Click on the Available tab.
+Search for NodeJS in the search bar.
+Check the box next to NodeJS.
+Click on Install without restart.
+
+
+Jenkins notes
+
+1) Dashboard
+2) new item
+3) Name project something ex: PW_CI_CD_Pipeline
+4) click pipeline, click ok
+5) find Pipeline header - this is where you will be able to create a script to run the pipeline
+6)
