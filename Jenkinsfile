@@ -43,7 +43,7 @@ pipeline {
                 bat 'npm install'
             }
         }
-        stage('Run Tests') {
+        stage('Install Playwright and its Browsers') {
             steps {
                 bat 'npm install --save-dev playwright'
             }
