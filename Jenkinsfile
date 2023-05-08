@@ -53,5 +53,15 @@ pipeline {
                 bat 'npx playwright test'
             }
         }
+
+        stage('Generate HTML Report') {
+            steps {
+                bat 'npx playwright show-report'
+                archiveArtifacts artifacts: '**/report/*.html', fingerprint: true
+            }
+        }
+    
+
+
     }
 }
