@@ -54,12 +54,19 @@ pipeline {
             }
         }
 
-        stage('Generate HTML Report') {
+        // stage('Generate HTML Report') {
+        //     steps {
+        //         bat 'npx playwright show-report'
+        //         archiveArtifacts artifacts: '**/report/*.html', fingerprint: true
+        //     }
+        // }
+
+        stage('Upload Playwright report') {
             steps {
-                bat 'npx playwright show-report'
-                archiveArtifacts artifacts: '**/report/*.html', fingerprint: true
+                archiveArtifacts artifacts: 'playwright-report/**', fingerprint: true
             }
         }
+
     
 
 
