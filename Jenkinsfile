@@ -30,9 +30,8 @@ pipeline {
     stages {
         stage('Print Hello') {
             steps {
-                echo: "Hello World"
+                echo("Hello World")
             }
         }
-
     }
 }
